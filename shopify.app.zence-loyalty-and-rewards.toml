@@ -1,0 +1,34 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "Zence Loyalty And Rewards"
+client_id = "623f61b307deed9a598c394759158a34"
+application_url = "https://9dkgqorxt3.execute-api.ap-south-1.amazonaws.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_customers,read_discounts,read_fulfillments,read_gift_cards,read_orders,read_themes,unauthenticated_write_checkouts,write_customers,write_discounts,write_draft_orders,write_gift_cards,write_orders,write_products,write_script_tags"
+use_legacy_install_flow = true
+
+[auth]
+redirect_urls = [
+  "https://9dkgqorxt3.execute-api.ap-south-1.amazonaws.com/auth/callback",
+  "https://9dkgqorxt3.execute-api.ap-south-1.amazonaws.com/auth/shopify/callback",
+  "https://9dkgqorxt3.execute-api.ap-south-1.amazonaws.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+  [webhooks.privacy_compliance]
+  customer_deletion_url = "https://9dkgqorxt3.execute-api.ap-south-1.amazonaws.com/api/webhooks"
+  customer_data_request_url = "https://9dkgqorxt3.execute-api.ap-south-1.amazonaws.com/api/webhooks"
+  shop_deletion_url = "https://9dkgqorxt3.execute-api.ap-south-1.amazonaws.com/api/webhooks"
+
+[app_proxy]
+url = "https://9dkgqorxt3.execute-api.ap-south-1.amazonaws.com/"
+subpath = "ez"
+prefix = "apps"
+
+[pos]
+embedded = false

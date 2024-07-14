@@ -1,0 +1,211 @@
+.form1 {
+  display: grid;
+  grid-template-columns: 70%;
+  height: auto;
+  grid-gap: 50px;
+}
+
+.form1 input {
+  height: 35px;
+  border-radius: 5px;
+  outline: none;
+  padding: 0 10px;
+  border-color: rgba(0, 0, 0, 0.137);
+  border-width: 1.5px;
+}
+
+.left {
+  width: 100%;
+  display: grid;
+  padding: 30px 40px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.048);
+  border-radius: 20px;
+  background: white;
+  grid-gap: 20px;
+}
+
+ .input {
+  width: 80%;
+  display: grid;
+  align-items: center;
+  grid-gap: 60px;
+  grid-template-columns: 20% 70%;
+}
+
+.right button {
+  padding: 8px 10px;
+  margin-top: 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.form1 button:active {
+  background: rgb(7, 35, 95);
+}
+
+.status span {
+  background: green;
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: white;
+  margin-left: 5px;
+}
+
+/* .theStatus {
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: white;
+  margin-left: 5px;
+} */
+
+/* .right {
+  width: 250px;
+  height: 200px;
+  display: grid;
+  background: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.048);
+  grid-gap: 40px;
+  padding: 30px 40px;
+  place-items: center;
+  align-content: center;
+  border-radius: 20px;
+} */
+
+.changePlanSpan{
+  padding: 5px 20px;
+  margin-left: 20px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+@media only screen and (max-width:768px) {
+  .form1 {
+    display: grid;
+    padding: 30px 20px;
+    grid-template-columns: 1fr;
+    height: auto;
+    grid-gap: 50px;
+  }
+}
+
+
+
+/* custom modal css here  */
+
+/* Modal Container */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Button Container */
+.button-container {
+  margin-top: 20px;
+}
+
+/* Buttons */
+button {
+  padding: 8px 16px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #cbcbcb58;
+}
+
+
+button:focus {
+  outline: none;
+}
+
+/* ends */
+
+
+/* custom toast  */
+
+/* Add styles for the toast */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+
+/*  custom toast ends */
+
+
+.themeMainDiv {
+  width: 50%;
+  padding: 20px;
+}
+
+.themeMainDiv span {
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.buttonSpan {
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 16px;
+  background: rgba(0, 122, 92, 1);
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width : 768px) {
+  .themeMainDiv {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+  .themeMainDiv {
+    width: 85%;
+  }
+}

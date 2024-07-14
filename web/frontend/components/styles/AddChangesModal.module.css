@@ -1,0 +1,30 @@
+.p{
+    font-size:"20px";
+    color:"rgb(5, 104, 170)";
+    font-weight:"bold";
+}
+
+.input{
+    width:"300px";
+    margin:"0px";
+}
+
+.buttonPassword{
+    width:"200px";
+    color:"rgb(5, 104, 170)";
+    background-color:"white";
+    margin-left:"0px";
+    font-weight:"normal";
+    font-size:"15px";
+  
+}
+
+.buttonClose{
+    width:"200px";
+    color:"white";
+    background-color:"rgb(5, 104, 170)";
+    margin:"10px";
+    font-size:"15px"
+
+}
+

@@ -1,0 +1,30 @@
+
+
+ success
+
+
+ res_success = {
+    status:200,
+    response:{
+        message: "Created New FTP Settings",
+        data:data
+    }
+    // additional feilds to send
+
+    error:{
+        message:null
+    }
+ }
+
+res_failed = {
+   status: 404,
+   response:{
+    message: null,
+    data:null
+   }
+   error:{
+    message:"Resource not found"
+   }
+}
+
+

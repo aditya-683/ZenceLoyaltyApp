@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "LiveAppZence"
+client_id = "20edd98407dd3686726f05fbbdf42eed"
+application_url = "https://experts-ssl-unique-registered.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://experts-ssl-unique-registered.trycloudflare.com/auth/callback",
+  "https://experts-ssl-unique-registered.trycloudflare.com/auth/shopify/callback",
+  "https://experts-ssl-unique-registered.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-a7607a1f.myshopify.com"

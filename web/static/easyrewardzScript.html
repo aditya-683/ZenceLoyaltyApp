@@ -1,0 +1,485 @@
+<body>
+  <style>
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    .sure {
+      color: black;
+      position: absolute;
+      top: 85%;
+      left: 39%;
+    }
+    /* Firefox */
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+
+    * {
+      font-family: var(--typeBasePrimary), var(--typeBaseFallback);
+    }
+    .newErrorMessage {
+      display: none;
+    }
+    .btn-font {
+      font-family: var(--typeBasePrimary), var(--typeBaseFallback) !important;
+    }
+    .abhi_eazyRewardz-cancel-button {
+      font-family: var(--typeBasePrimary), var(--typeBaseFallback) !important;
+      width: 200px;
+      border: 1px solid grey;
+      padding: 10px 18px;
+      /* background-color: black !important; */
+      background-color: black;
+      margin-top: 8px;
+      font-weight: 500;
+      color: white;
+      cursor: pointer;
+    }
+
+    .abhi_eazyRewardz-submit-button {
+      position: relative;
+      z-index: 999;
+      width: 200px;
+      color: white;
+      font-weight: 500;
+      cursor: pointer;
+      border: 0px solid black;
+      padding: 10px 15px;
+      margin-top: 8px;
+    }
+
+    .abhi_eazyRewardz-submit-button:hover {
+      opacity: 0.9;
+    }
+
+    .abhi_eazyRewardzFormGroup {
+      display: flex;
+      /* justify-content: space-between; */
+      margin-bottom: 10px;
+      gap: 15px;
+      align-items: center;
+      position: relative;
+    }
+    .abhi_eazyRewardzFormGroup > label {
+      /* margin-left: 10px; */
+    }
+    .abhi_eazyRewardzFormGroup > input {
+      /* flex: 1; */
+      padding: 7px;
+      border: none;
+      border-bottom: 1px solid grey;
+      color: grey;
+      width: 67%;
+      margin-bottom: 12px;
+      /*position: absolute;
+     right: 0; */
+    }
+    .abhi_eazyRewardzFormGroup > input:focus {
+      outline: none;
+    }
+    *:focus {
+      outline: none;
+      /*     border:none; */
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+    .abhi_easyModalDynamicContent {
+      margin-top: -10px;
+    }
+
+    .abhi_easyModalDynamicContent h2 b {
+      padding-bottom: 4px;
+      /* border-bottom: 2px solid grey; */
+      font-family: "Raleway", sans-serif;
+      color: darkgrey;
+      font-size: 20px;
+    }
+
+    .abhi_eazyRewardzModal {
+      display: none;
+      position: fixed;
+      z-index: 99999;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      height: 100%;
+      overflow: auto;
+      font-family: "Raleway", sans-serif;
+    }
+    .abhi_modal-content {
+      width: 50% !important;
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      border-radius: 15px;
+      font-family: "Raleway", sans-serif;
+      box-shadow: 4px 4px 4px 4px grey;
+    }
+    .abhi_closeEasyModal {
+      color: #000000;
+      float: right;
+      font-size: 20px;
+      /*   font-weight: bold; */
+      cursor: pointer;
+    }
+    /* .input: {
+   padding: 20px 10px;
+     border 1px solid black;
+ } */
+    .abhi_closeEasyModal:hover,
+    .abhi_closeEasyModal:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    label {
+      color: black;
+    }
+    @media (max-width: 1304px) {
+      .abhi_modal-content {
+        width: 60% !important;
+      }
+    }
+    @media (max-width: 1090px) {
+      .abhi_modal-content {
+        width: 70% !important;
+      }
+    }
+    @media only screen and (max-width: 700px) {
+      .discountCouponInput {
+        font-size: 15px !important;
+      }
+      .eazyRewardz-input.form-control.form-control-lg.discountCouponInput.discountCouponInputValue {
+        margin-left: 20%;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      .abhi_mobileScreen {
+        width: 85% !important;
+      }
+
+      .abhi_eazyRewardz-submit-button {
+        width: 180px;
+        padding: 10px 0px;
+      }
+
+      .abhi_eazyRewardz-cancel-button {
+        width: 180px;
+      }
+    }
+    @media (max-width: 450px) {
+      .abhi_eazyRewardz-submit-button {
+        padding: 10px 0px;
+        width: 155px;
+      }
+      .abhi_eazyRewardz-cancel-button {
+        padding: 9px 0px;
+        width: 155px;
+      }
+    }
+    @media only screen and (max-width: 320px) {
+      .abhi_mobileScreen {
+        text-align: center;
+      }
+      .abhi_eazyRewardzFormGroup > input {
+        padding: 7px;
+        border: none;
+        color: grey;
+        width: 76%;
+        margin-top: 20px;
+        border: 2px solid grey;
+        outline: none;
+      }
+      .size_mob {
+        font-size: 17px !important;
+      }
+    }
+    @media only screen and (min-width: 260px) and (max-width: 352px) {
+      .sure {
+        color: black;
+        position: absolute;
+        top: 92%;
+        left: 27%;
+      }
+      .abhi_mobileScreen {
+        text-align: center;
+      }
+      .abhi_closeEasyModal {
+        color: #000000;
+        float: right;
+        font-size: 20px;
+        /* font-weight: bold; */
+        cursor: pointer;
+        position: absolute;
+        top: 14%;
+        right: 6%;
+      }
+      .abhi_eazyRewardzFormGroup > input {
+        flex: 1;
+        padding: 7px;
+        border: none;
+        border-bottom: 1px solid grey;
+        color: grey;
+        width: 60%;
+        margin-bottom: 12px;
+        /* text-align: center; */
+      }
+
+      .abhi_eazyRewardzFormGroup {
+        display: block;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        align-items: center;
+        position: relative;
+      }
+
+      .size_mob {
+        font-size: 15px !important;
+      }
+
+      .hide_label {
+        font-size: 15px !important;
+      }
+    }
+
+    @media only screen and (min-width: 353px) and (max-width: 500px) {
+      .sure {
+        color: black;
+        position: absolute;
+        top: 84%;
+        left: 35%;
+      }
+
+      .abhi_closeEasyModal {
+        color: #000000;
+        float: right;
+        font-size: 20px;
+        /* font-weight: bold; */
+        position: absolute;
+        cursor: pointer;
+        top: 14%;
+        right: 7%;
+      }
+
+      .abhi_eazyRewardzFormGroup > input {
+        flex: 1;
+        padding: 7px;
+        border: none;
+        border-bottom: 1px solid grey;
+        color: grey;
+        width: 60%;
+        margin-bottom: 12px;
+        /* text-align: center; */
+      }
+
+      .abhi_eazyRewardzFormGroup {
+        display: block !important;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        align-items: center;
+        position: relative;
+      }
+
+      .size_mob {
+        font-size: 15px !important;
+      }
+
+      .hide_label {
+        font-size: 15px !important;
+      }
+    }
+    @media only screen and (min-width: 500px) and (max-width: 600px) {
+      .abhi_closeEasyModal {
+        color: #000000;
+        float: right;
+        font-size: 20px;
+        /* font-weight: bold; */
+        position: absolute;
+        cursor: pointer;
+        top: 14%;
+        right: 7%;
+      }
+      .abhi_eazyRewardzFormGroup > input {
+        flex: 1;
+        padding: 7px;
+        border: none;
+        border-bottom: 1px solid grey;
+        color: grey;
+        width: 60%;
+        margin-bottom: 12px;
+        /* text-align: center; */
+      }
+
+      .abhi_eazyRewardzFormGroup {
+        display: block;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        align-items: center;
+        position: relative;
+      }
+
+      .size_mob {
+        font-size: 15px !important;
+      }
+
+      .hide_label {
+        font-size: 15px !important;
+      }
+    }
+
+    @media only screen and (min-width: 600px) and (max-width: 700px) {
+      .abhi_closeEasyModal {
+        color: #000000;
+        float: right;
+        font-size: 20px;
+        /* font-weight: bold; */
+        position: absolute;
+        cursor: pointer;
+        top: 14%;
+        right: 15%;
+      }
+      .abhi_eazyRewardzFormGroup > input {
+        flex: 1;
+        padding: 7px;
+        border: none;
+        border-bottom: 1px solid grey;
+        color: grey;
+        width: 60%;
+        margin-bottom: 12px;
+        text-align: center;
+      }
+
+      .abhi_eazyRewardzFormGroup {
+        display: block;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        align-items: center;
+        position: relative;
+      }
+
+      .size_mob {
+        font-size: 15px !important;
+      }
+
+      .hide_label {
+        font-size: 15px !important;
+      }
+    }
+
+    @media only screen and (min-width: 600px) and (max-width: 1000px) {
+      .abhi_closeEasyModal {
+        color: #000000;
+        float: right;
+        font-size: 20px;
+        /* font-weight: bold; */
+        position: absolute;
+        cursor: pointer;
+        top: 14%;
+        right: 15%;
+      }
+
+      .eazyRewardz-input {
+        color: black;
+      }
+    }
+
+    .abhi_loader {
+      border: 2px solid orange !important;
+      width: 40px !important;
+      height: 40px !important;
+      border-radius: 50% !important;
+      border-right-color: transparent !important;
+      animation: rotate 0.4s linear infinite;
+      display: none;
+      margin-left: 45%;
+    }
+
+    @keyframes rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+  <div>
+    <div
+      id="myModal"
+      class="abhi_eazyRewardzModal"
+      style="width: 100vw; height: 100vh; display: block"
+    >
+      <div class="abhi_modal-content abhi_mobileScreen" style="width: 60%">
+        <span class="abhi_closeEasyModal closeModalAndReleasePoints">×</span>
+        <span
+          class="abhi_closeEasyModal closeSuccessModal"
+          style="display: none"
+          >×</span
+        >
+        <div class="abhi_easyModalDynamicContent">
+          <h2 style="text-align: center"><b>Enter your EasyId</b></h2>
+          <p class="errorMessage" style="color: red !important"></p>
+          <form>
+            <div class="abhi_form-group abhi_eazyRewardzFormGroup">
+              <label class="size_mob" for="exampleInputEmail1 ashish"
+                >Mobile Number
+              </label>
+              <input
+                class="eazyRewardz-input form-control form-control-lg abhi_mobileInput"
+                type="number"
+                placeholder=""
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                maxlength="10"
+              />
+              <br />
+
+              <br />
+            </div>
+            <div class="abhi_form-group abhi_eazyRewardzFormGroup">
+              <label
+                for="exampleInputEmail1"
+                class="discountCouponInput"
+                style="display: none"
+                >Coupon Code</label
+              >
+              <input
+                class="eazyRewardz-input form-control form-control-lg discountCouponInput discountCouponInputValue"
+                type="text"
+                placeholder=""
+                style="display: none"
+              />
+            </div>
+            <div class="mt0elbdz7tk abhi_loader"></div>
+            <button
+              type="button"
+              class="btn btn-primary abhi_eazyRewardz-submit-button btn-lg getAvailablePointsSubmit abhi_checkPointsButton btn-font"
+            >
+              Redeem Points
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary abhi_eazyRewardz-submit-button btn-lg applyCouponButton btn-font"
+            >
+              Apply Coupon
+            </button>
+            <button
+              type="submit"
+              class="btn btn-danger abhi_eazyRewardz-cancel-button btn-lg abhi_continueCheckoutSubmit btn-font"
+            >
+              Cancel
+            </button>
+          </form>
+          <div
+            class="customMessageWrap"
+            style="text-align: left; line-height: 15px; margin-top: 8px"
+          >
+            <small class="customMessage"></small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,85 @@
+.form {
+    width: 100% !important;
+    height: auto;
+    align-self: flex-start;
+
+}
+
+.container {
+    width: 90vw !important;
+    height: 100%;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 5%);
+    border-radius: 20px;
+    padding: 30px;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 10px;
+}
+
+.modal1 {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.modal1 h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.input {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 450px .1fr;
+}
+
+.input input {
+    height: 25px;
+    border-radius: 5px;
+    outline: none;
+    padding: 0 10px;
+    border-color: rgba(0, 0, 0, 0.137);
+    border-width: 1.5px;
+    cursor: pointer;
+}
+
+
+.smallDescription {
+    margin-top: -15px;
+}
+
+.submitBtn button {
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+
+/* FAQ Page CSS */
+.FaqComponentMain{
+    width: 80%;
+    margin: 5px 20px;
+    padding: 5px 0;
+  }
+  .question{
+    padding: 5px 2px;
+  }
+  .faqButton{
+    color: white;
+    background-color: black;
+  }
+  .showAnswer{
+    display: block;
+    padding: 5px 3px;
+    transition-timing-function: ease-in;
+  }
+  .HideAnswer{
+    display: none;
+  }
+  .active{
+    transform: rotate(180deg);
+  }

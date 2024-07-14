@@ -1,0 +1,41 @@
+.formInput {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  width: 280px;
+  /* flex: 50%; */
+}
+
+.inpt {
+  padding: 15px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.mySelect {
+  padding: 15px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.lb {
+  font-size: 12px;
+  color: gray;
+}
+
+.mySpan {
+  font-size: 12px;
+  padding: 3px;
+  color: red;
+  display: none;
+}
+
+.inpt:invalid[focused="true"] {
+  border: 1px solid red;
+}
+
+.inpt:invalid[focused="true"] ~ span {
+  display: block;
+}

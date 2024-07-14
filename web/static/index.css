@@ -1,0 +1,408 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.sure {
+  color: black;
+  position: absolute;
+  top: 85%;
+  left: 39%;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+* {
+  font-family: var(--typeBasePrimary), var(--typeBaseFallback);
+}
+
+.btn-font {
+  font-family: var(--typeBasePrimary), var(--typeBaseFallback) !important;
+}
+
+.abhi_eazyRewardz-cancel-button {
+  font-family: var(--typeBasePrimary), var(--typeBaseFallback) !important;
+  width: 200px;
+  border: 1px solid grey;
+  padding: 10px 18px;
+  background-color: black;
+  margin-top: 8px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+
+.abhi_eazyRewardz-submit-button {
+  width: 200px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: black;
+  border: 0px solid black;
+  padding: 10px 15px;
+  margin-top: 8px;
+}
+
+
+.abhi_eazyRewardz-submit-button:hover {
+  opacity: 0.9;
+}
+
+.abhi_eazyRewardzFormGroup {
+  display: flex;
+  margin-bottom: 10px;
+  gap: 15px;
+  align-items: center;
+  position: relative;
+}
+
+.abhi_eazyRewardzFormGroup>label {
+  /* margin-left: 10px; */
+}
+
+.abhi_eazyRewardzFormGroup>input {
+  /* flex: 1; //modified for SS */
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid grey;
+  color: grey;
+  /* width modified for SS */
+  width: 67%;
+  margin-bottom: 12px;
+  /* position: absolute;
+  right: 0; */
+}
+
+.abhi_eazyRewardzFormGroup>input:focus {
+  outline: none;
+}
+
+*:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.abhi_easyModalDynamicContent {
+  margin-top: -10px;
+}
+
+.abhi_easyModalDynamicContent h2 b {
+  padding-bottom: 4px;
+  /* modified for SS */
+  /* border-bottom: 2px solid grey; */
+  font-family: "Raleway", sans-serif;
+  color: darkgrey;
+  font-size: 20px;
+}
+
+.abhi_eazyRewardzModal {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: "Raleway", sans-serif;
+}
+
+.abhi_modal-content {
+  width: 50% !important;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 15px;
+  font-family: "Raleway", sans-serif;
+  box-shadow: 4px 4px 4px 4px grey;
+}
+
+.abhi_closeEasyModal {
+  color: #000000;
+  /* float: left;   modified for SS */
+  float: right;
+  font-size: 20px;
+  /*   font-weight: bold; */
+  cursor: pointer;
+}
+
+/* .input: {
+	padding: 20px 10px;
+  	border 1px solid black;
+} */
+.abhi_closeEasyModal:hover,
+.abhi_closeEasyModal:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+label {
+  color: black;
+}
+
+@media (max-width: 1304px) {
+  .abhi_modal-content {
+    width: 60% !important;
+  }
+}
+
+@media (max-width: 1090px) {
+  .abhi_modal-content {
+    width: 70% !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .discountCouponInput {
+    font-size: 15px !important;
+  }
+
+  .eazyRewardz-input.form-control.form-control-lg.discountCouponInput.discountCouponInputValue {
+    margin-left: 20%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .abhi_mobileScreen {
+    width: 90% !important;
+  }
+
+  .abhi_eazyRewardz-submit-button {
+    width: 180px;
+    padding: 10px 0px;
+  }
+
+  .abhi_eazyRewardz-cancel-button {
+    width: 180px;
+  }
+}
+
+@media (max-width: 450px) {
+  .abhi_eazyRewardz-submit-button {
+    padding: 10px 0px;
+    width: 155px;
+  }
+
+  .abhi_eazyRewardz-cancel-button {
+    padding: 9px 0px;
+    width: 155px;
+  }
+}
+
+@media only screen and (min-width: 260px) and (max-width: 352px) {
+  .sure {
+    color: black;
+    position: absolute;
+    top: 92%;
+    left: 27%;
+  }
+
+  .abhi_closeEasyModal {
+    color: #000000;
+    float: right;
+    font-size: 20px;
+    /* font-weight: bold; */
+    cursor: pointer;
+    position: absolute;
+    top: 16%;
+    left: 9%;
+  }
+
+  .abhi_eazyRewardzFormGroup>input {
+    flex: 1;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid grey;
+    color: grey;
+    width: 64%;
+    margin-right: 35px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .abhi_eazyRewardzFormGroup {
+    display: block;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+    position: relative;
+  }
+
+  .size_mob {
+    font-size: 15px !important;
+  }
+
+  .hide_label {
+    font-size: 15px !important;
+  }
+}
+
+@media only screen and (min-width: 353px) and (max-width: 500px) {
+  .sure {
+    color: black;
+    position: absolute;
+    top: 84%;
+    left: 35%;
+  }
+
+  .abhi_closeEasyModal {
+    color: #000000;
+    float: right;
+    font-size: 20px;
+    /* font-weight: bold; */
+    position: absolute;
+    cursor: pointer;
+    top: 20%;
+    right: 6%;
+  }
+
+  .abhi_eazyRewardzFormGroup>input {
+    flex: 1;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid grey;
+    color: grey;
+    width: 60%;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .abhi_eazyRewardzFormGroup {
+    display: block !important;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+    position: relative;
+  }
+
+  .size_mob {
+    font-size: 15px !important;
+  }
+
+  .hide_label {
+    font-size: 15px !important;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+  .abhi_closeEasyModal {
+    color: #000000;
+    float: right;
+    font-size: 20px;
+    /* font-weight: bold; */
+    position: absolute;
+    cursor: pointer;
+    top: 20%;
+    right: 7%;
+  }
+
+  .abhi_eazyRewardzFormGroup>input {
+    flex: 1;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid grey;
+    color: grey;
+    width: 60%;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .abhi_eazyRewardzFormGroup {
+    display: block;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+    position: relative;
+  }
+
+  .size_mob {
+    font-size: 15px !important;
+  }
+
+  .hide_label {
+    font-size: 15px !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 700px) {
+  .abhi_closeEasyModal {
+    color: #000000;
+    float: right;
+    font-size: 20px;
+    /* font-weight: bold; */
+    position: absolute;
+    cursor: pointer;
+    top: 20%;
+    right: 15%;
+  }
+
+  .abhi_eazyRewardzFormGroup>input {
+    flex: 1;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid grey;
+    color: grey;
+    width: 60%;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .abhi_eazyRewardzFormGroup {
+    display: block;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+    position: relative;
+  }
+
+  .size_mob {
+    font-size: 15px !important;
+  }
+
+  .hide_label {
+    font-size: 15px !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .abhi_closeEasyModal {
+    color: #000000;
+    float: right;
+    font-size: 20px;
+    /* font-weight: bold; */
+    position: absolute;
+    cursor: pointer;
+    top: 20%;
+    right: 15%;
+  }
+
+  .eazyRewardz-input {
+    color: black;
+  }
+}
+
+.abhi_loader {
+  border: 2px solid orange !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  border-right-color: transparent !important;
+  animation: rotate 0.4s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}

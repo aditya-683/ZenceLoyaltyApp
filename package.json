@@ -1,0 +1,32 @@
+{
+  "name": "er-nonplus",
+  "version": "1.0.0",
+  "main": "web/index.js",
+  "license": "UNLICENSED",
+  "type": "module",
+  "scripts": {
+    "shopify": "shopify",
+    "build": "shopify app build",
+    "dev": "shopify app dev",
+    "info": "shopify app info",
+    "generate": "shopify app generate",
+    "deploy": "shopify app deploy"
+  },
+  "dependencies": {
+    "@shopify/app": "3.49.6",
+    "@shopify/cli": "3.49.6",
+    "adm-zip": "^0.5.10",
+    "cors": "^2.8.5",
+    "react-dom": "^18.2.0",
+    "webpack": "^5.88.0"
+  },
+  "author": "user",
+  "private": true,
+  "workspaces": [
+    "web",
+    "web/frontend",
+    "extensions/*"
+  ],
+  "description": "This is a template for building a [Shopify app](https://shopify.dev/docs/apps/getting-started) using Node and React. It contains the basics for building a Shopify app.",
+  "devDependencies": {}
+}

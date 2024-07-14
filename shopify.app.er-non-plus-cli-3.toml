@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "ER-Non-Plus-CLI-3"
+client_id = "e28ece7c60f576517e4935b59394bca3"
+application_url = "https://ershopifystore.erzqa.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_customers,read_discounts,read_fulfillments,read_gift_cards,read_orders,read_themes,unauthenticated_write_checkouts,write_customers,write_discounts,write_draft_orders,write_gift_cards,write_orders,write_products,write_script_tags"
+use_legacy_install_flow = true
+
+[auth]
+redirect_urls = [
+  "https://ershopifystore.erzqa.com/auth/callback",
+  "https://ershopifystore.erzqa.com/auth/shopify/callback",
+  "https://ershopifystore.erzqa.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[app_proxy]
+url = "https://ershopifystore.erzqa.com/"
+subpath = "codem"
+prefix = "apps"
+
+[pos]
+embedded = false
